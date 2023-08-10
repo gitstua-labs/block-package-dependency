@@ -1,0 +1,14 @@
+{
+  "name": "block-package-dependency",
+  "version": "1.0.0",
+  "description": "Block a specific package being introduced using dependency review",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pac-resolver": "^4.0.0"
+  }
+}
