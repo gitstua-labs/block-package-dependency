@@ -33,3 +33,5 @@ The example PR is blocked with a check as shown below
 The detailed error in the action
 <img width="776" alt="image" src="https://github.com/gitstua-labs/block-package-dependency/assets/25424433/67670d41-d6e2-475b-93dc-c6c14155bb05">
 
+## Making this a required workflow for the whole organization
+To make this a required workflow for the whole organization see the [documentation](https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#configuring-a-required-workflow-for-your-organization)
