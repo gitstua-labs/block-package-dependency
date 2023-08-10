@@ -1,0 +1,19 @@
+name: 'Dependency Review'
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v3
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v3
+        with:
+          fail-on-severity: moderate
+          # we can deny a specific package as per https://github.com/actions/dependency-review-action/blob/main/README.md#:~:text=false-,deny%2Dpackages,-Any%20number%20of
+          deny-packages: pkg:npm/pac-resolver@4.0.0
+
+          # Use comma-separated names to pass list arguments:
+          #deny-licenses: LGPL-2.0, BSD-2-Clause
